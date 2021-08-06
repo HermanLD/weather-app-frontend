@@ -1,6 +1,8 @@
 .forecast-daily {
   width: 100%;
   background-color: #1e213a;
+  padding-top: 2rem;
+  padding-bottom: 0;
 }
 
 .forecast-daily-display {
@@ -73,6 +75,11 @@
   margin-left: var(--custom-margin);
 }
 
-.curr-location {
+.forecast-daily-data .curr-location {
   font-weight: var(--fw-6);
+}
+
+.forecast-daily-data .map-marker-icon {
+  display: inline-block;
+  margin-right: 0.9rem;
 }
