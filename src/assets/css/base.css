@@ -27,6 +27,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: var(--ff-body);
+  letter-spacing: 1px;
 
   text-rendering: optimizeSpeed;
   scroll-behavior: smooth;

@@ -10,6 +10,7 @@ import {
   faArrowCircleUp,
   faTimes,
   faSearch,
+  faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faMapMarkerAlt);
@@ -17,6 +18,7 @@ library.add(faCrosshairs);
 library.add(faArrowCircleUp);
 library.add(faTimes);
 library.add(faSearch);
+library.add(faChevronRight);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

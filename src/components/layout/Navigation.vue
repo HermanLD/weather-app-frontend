@@ -31,6 +31,9 @@
                 type="text"
                 v-model="location"
                 placeholder="search location"
+                @keydown.enter="
+                  submitLocationQuery(allowUserLocation, location)
+                "
             /></label>
             <button
               class="query-btn"
@@ -45,8 +48,15 @@
             class="search-history"
             v-for="(oldQuery, index) in searchHistory"
             :key="index"
+            :data-index="index"
+            @click="useOldQuery($event, oldQuery)"
           >
-            <a class="search-history-item">{{ oldQuery }}</a>
+            <span class="search-history-item"
+              >{{ oldQuery
+              }}<font-awesome-icon
+                class="search-history-icon"
+                :icon="['fas', 'chevron-right']"
+            /></span>
           </li>
         </ul>
 
@@ -71,7 +81,7 @@ export default {
     return {
       location: "",
       searchHistory: ["London", "Reno", "San Francisco"],
-      isExpanded: "true", //! change to false
+      isExpanded: "false",
     };
   },
   computed: {
@@ -80,6 +90,12 @@ export default {
     },
   },
   methods: {
+    useOldQuery(event, oldQuery) {
+      const itemIndex = parseInt(event.target.parentElement.dataset.index);
+      this.searchHistory.splice(itemIndex, 1);
+      this.location = oldQuery;
+      document.querySelector(".navigation-dropdown-input").focus();
+    },
     toggleExpandedState() {
       this.isExpanded = this.isExpanded === "false" ? "true" : "false";
     },

@@ -4,7 +4,8 @@
     <app-nav />
 
     <div class="forecast-daily-display">
-      <img src="../../assets/images/Shower.png" />
+      <img :src="getStatusImg(todaysForecast.weather.icon)" />
+      <!-- {{ todaysForecast.weather.icon }} -->
     </div>
     <div class="forecast-daily-data">
       <p class="temp">
@@ -38,6 +39,9 @@ export default {
   methods: {
     dispatchFetchForecast() {
       this.$store.dispatch("fetchForecast");
+    },
+    getStatusImg(iconCode) {
+      return require(`../../assets/images/${iconCode}.png`);
     },
   },
   computed: {

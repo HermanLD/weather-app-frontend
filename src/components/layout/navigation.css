@@ -74,6 +74,7 @@
   font: inherit;
   font-size: 1.6rem;
   font-weight: var(--fw-6);
+  letter-spacing: 1px;
 }
 
 .search-icon {
@@ -91,10 +92,13 @@
   background-color: rgba(0, 0, 0, 0);
   border: none;
   font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: #e7e7eb;
   caret-color: #e7e7eb;
 }
 .navigation-dropdown-input::placeholder {
   color: #e7e7eb;
+  letter-spacing: 1px;
 }
 .navigation-dropdown-input:focus {
   outline: none;
@@ -110,7 +114,8 @@
 }
 
 .navigation-dropdown .search-history-item {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   padding: 2.4rem 1.2rem;
   width: 100%;
   color: #e7e7eb;
@@ -120,8 +125,22 @@
 .navigation-dropdown .search-history-item:hover,
 .navigation-dropdown .search-history-item:focus {
   box-shadow: 0 0 0 1px #e7e7eb;
+  cursor: pointer;
+}
+
+.search-history-item > .search-history-icon {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.search-history-item:hover > .search-history-icon,
+.search-history-item:focus > .search-history-icon {
+  visibility: visible;
+  opacity: 1;
 }
 
 .search-history {
   width: 100%;
+  color: #e7e7eb;
+  font-size: 1.6rem;
 }
