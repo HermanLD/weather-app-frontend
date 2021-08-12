@@ -1,0 +1,39 @@
+.app-toggle {
+  display: flex;
+  padding-right: 1.3rem;
+  padding-left: 1.3rem;
+  justify-content: flex-end;
+}
+
+.app-toggle-celcius,
+.app-toggle-fahrenheit {
+  --toggle-dim: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--toggle-dim);
+  height: var(--toggle-dim);
+  border-radius: 50%;
+  background-color: #585676;
+  color: #e7e7eb;
+  font-size: 1.8rem;
+  font-weight: var(--fw-7);
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.app-toggle-celcius {
+  margin-right: 1.2rem;
+}
+
+.app-toggle-celcius > .unit-label,
+.app-toggle-fahrenheit > .unit-label {
+}
+
+.app-toggle-celcius[data-isChecked="true"],
+.app-toggle-fahrenheit[data-isChecked="true"] {
+  background-color: #e7e7eb;
+  color: #110e3c;
+}

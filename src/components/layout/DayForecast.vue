@@ -1,13 +1,12 @@
 <template>
-  <section class="forecast-daily">
+  <section class="section-forecast-main">
     <!-- NAVIGATION AND DROPDOWN -->
     <app-nav />
 
-    <div class="forecast-daily-display">
-      <img :src="getStatusImg(todaysForecast.weather.icon)" />
-      <!-- {{ todaysForecast.weather.icon }} -->
+    <div class="forecast-main-display">
+      <img :src="imgSrcCode(todaysForecast.weather.icon)" />
     </div>
-    <div class="forecast-daily-data">
+    <div class="forecast-main-data">
       <p class="temp">
         {{ todaysForecast.temp | roundTemp
         }}<span class="temp-unit">{{ tempUnit }}</span>
@@ -28,8 +27,11 @@
 </template>
 
 <script>
+import Navigation from "../navigation/Navigation.vue";
+import imgSrcCode from "../../utils/imgSrcCode";
+import formatDate from "../../utils/filterDate";
+import roundTemp from "../../utils/filterRoundNum";
 import { mapGetters } from "vuex";
-import Navigation from "./Navigation.vue";
 import "./day-forecast.css";
 
 export default {
@@ -37,12 +39,7 @@ export default {
     "app-nav": Navigation,
   },
   methods: {
-    dispatchFetchForecast() {
-      this.$store.dispatch("fetchForecast");
-    },
-    getStatusImg(iconCode) {
-      return require(`../../assets/images/${iconCode}.png`);
-    },
+    imgSrcCode,
   },
   computed: {
     ...mapGetters({
@@ -52,15 +49,8 @@ export default {
     }),
   },
   filters: {
-    formatDate(rawDate) {
-      let date = new Date(rawDate);
-      let dateStr = date.toDateString();
-      let dateArr = dateStr.split(" ");
-      return `${dateArr[0]}, ${dateArr[2]} ${dateArr[1]}`;
-    },
-    roundTemp(temp) {
-      return Math.round(temp);
-    },
+    formatDate,
+    roundTemp,
   },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="app-wrapper" id="app">
     <DayForecast />
     <WeekForecast />
   </div>
@@ -56,8 +56,11 @@ export default {
 </script>
 
 <style>
-#app {
-  display: flex;
-  flex-wrap: wrap;
-}
+/* 
+@media (min-width: 1036px) {
+  .app-wrapper {
+    SOMETHING SOMETHING SOMETHING
+  }
+} 
+*/
 </style>
