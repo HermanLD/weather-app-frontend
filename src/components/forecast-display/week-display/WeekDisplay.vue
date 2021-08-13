@@ -26,8 +26,8 @@
 </template>
 
 <script>
-import formatDate from "../../utils/filterDate";
-import roundTemp from "../../utils/filterRoundNum";
+import formatDate from "../../../utils/filterDate";
+import roundTemp from "../../../utils/filterRoundNum";
 
 export default {
   filters: {

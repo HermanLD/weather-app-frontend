@@ -32,7 +32,6 @@ import imgSrcCode from "../../utils/imgSrcCode";
 import formatDate from "../../utils/filterDate";
 import roundTemp from "../../utils/filterRoundNum";
 import { mapGetters } from "vuex";
-import "./day-forecast.css";
 
 export default {
   components: {

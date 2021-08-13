@@ -24,10 +24,9 @@
 </template>
 
 <script>
-import WeekDisplay from "../forecast-display/week-display";
-import HighlightDisplay from "../forecast-display/highlight-display";
+import WeekDisplay from "../forecast-display/week-display/WeekDisplay.vue";
+import HighlightDisplay from "../forecast-display/highlight-display/HighlightDisplay.vue";
 import UnitToggle from "../ui/AppToggle.vue";
-import "./week-forecast.css";
 
 export default {
   components: {

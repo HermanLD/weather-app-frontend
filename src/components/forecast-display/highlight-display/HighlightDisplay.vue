@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="highlight-display">
     <li class="highlight">
       <h2 class="highlight-header">Wind status</h2>
       <p class="highlight-content">
@@ -35,8 +35,8 @@
 </template>
 
 <script>
-import WindCompass from "../forecastDisplay/WindCompass.vue";
-import ProgressBar from "../forecastDisplay/ProgressBar.vue";
+import WindCompass from "../../forecast-display/WindCompass.vue";
+import ProgressBar from "../../forecast-display/ProgressBar.vue";
 
 export default {
   components: {
