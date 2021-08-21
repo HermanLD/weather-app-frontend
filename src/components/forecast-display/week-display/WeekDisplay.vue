@@ -42,5 +42,10 @@ export default {
       return this.$store.getters.getFahOrCelc;
     },
   },
+  methods: {
+    getStatusImg(imgURL) {
+      return require(`../../../assets/images/${imgURL}.png`);
+    },
+  },
 };
 </script>

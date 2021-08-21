@@ -1,5 +1,10 @@
 .navigation {
   position: relative;
+
+  --padding-sides: 1.2rem;
+  padding-top: 1.8rem;
+  padding-right: var(--padding-sides);
+  padding-left: var(--padding-sides);
 }
 .navigation-main {
   display: flex;
@@ -40,7 +45,7 @@
   width: 100%;
   padding-right: 1.2rem;
   padding-left: 1.2rem;
-  background-color: #1e213a;
+  background-color: var(--clr-cmp-bg);
 }
 [aria-expanded="false"] + .navigation-dropdown {
   visibility: hidden;

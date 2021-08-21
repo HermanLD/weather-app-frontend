@@ -37,6 +37,7 @@
 <script>
 import WindCompass from "../../forecast-display/WindCompass.vue";
 import ProgressBar from "../../forecast-display/ProgressBar.vue";
+import roundTemp from "../../../utils/filterRoundNum";
 
 export default {
   components: {
@@ -47,6 +48,9 @@ export default {
     todaysForecast() {
       return this.$store.getters.getTodaysForecast;
     },
+  },
+  filters: {
+    roundTemp,
   },
 };
 </script>

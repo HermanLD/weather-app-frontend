@@ -56,11 +56,17 @@ export default {
 </script>
 
 <style>
-/* 
-@media (min-width: 1036px) {
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  color: hsl(240, 9%, 91%);
+}
+
+@media (min-width: 1120px) {
   .app-wrapper {
-    SOMETHING SOMETHING SOMETHING
+    flex-direction: row;
+    align-content: stretch;
+    flex-grow: 1;
   }
-} 
-*/
+}
 </style>

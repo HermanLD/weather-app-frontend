@@ -1,15 +1,19 @@
 <template>
-  <section class="section-forecast-main">
+  <section class="forecast-main">
     <!-- NAVIGATION AND DROPDOWN -->
     <app-nav />
 
     <div class="forecast-main-display">
-      <img :src="imgSrcCode(todaysForecast.weather.icon)" />
+      <img
+        class="forecast-main-display-icon"
+        :src="imgSrcCode(todaysForecast.weather.icon)"
+        alt="Weather status icon"
+      />
     </div>
     <div class="forecast-main-data">
       <p class="temp">
-        {{ todaysForecast.temp | roundTemp
-        }}<span class="temp-unit">{{ tempUnit }}</span>
+        <span class="temp-data">{{ todaysForecast.temp | roundTemp }}</span
+        >{{ tempUnit }}
       </p>
       <p class="description">{{ todaysForecast.weather.description }}</p>
       <p class="date">
@@ -32,6 +36,7 @@ import imgSrcCode from "../../utils/imgSrcCode";
 import formatDate from "../../utils/filterDate";
 import roundTemp from "../../utils/filterRoundNum";
 import { mapGetters } from "vuex";
+import "./day-forecast.css";
 
 export default {
   components: {

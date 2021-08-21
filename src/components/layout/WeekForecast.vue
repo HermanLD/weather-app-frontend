@@ -1,19 +1,21 @@
 <template>
-  <section class="section-weekly-forecast">
-    <!-- UNIT TOGGLE -->
-    <unit-toggle />
-    <div class="weekly-forecast-days">
-      <!-- WEEK FORECAST DISPLAY -->
-      <week-display />
+  <section class="weekly-forecast">
+    <div class="weekly-forecast-content">
+      <!-- UNIT TOGGLE -->
+      <unit-toggle />
+      <div class="weekly-forecast-days">
+        <!-- WEEK FORECAST DISPLAY -->
+        <week-display />
+      </div>
+
+      <div class="weekly-forecast-today">
+        <h1>Today's Highlights</h1>
+        <!-- HIGHLIGHTS DISPLAY -->
+        <highlight-display />
+      </div>
     </div>
 
-    <div class="weekly-forecast-today">
-      <h1>Today's Highlights</h1>
-      <!-- HIGHLIGHTS DISPLAY -->
-      <highlight-display />
-    </div>
-
-    <footer class="section-footer">
+    <footer class="weekly-forecast-footer">
       <p>
         created by
         <a href="https://devchallenges.io/portfolio/HermanLD">Herman Dardon</a>

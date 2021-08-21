@@ -1,18 +1,21 @@
 :root {
   --base-sizing: 62.5%;
   --ff-body: "Raleway", sans-serif;
-  --fw-1: 100;
-  --fw-5: 500;
-  --fw-6: 600;
-  --fw-7: 700;
+  --fw-lite: 100;
+  --fw-reg: 500;
+  --fw-thick: 600;
+  --fw-bold: 700;
+
+  --clr-bg: #100e1d;
+  --clr-cmp-bg: #1e213a;
 }
 
 *,
 *::before,
 *::after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 /** ---- */
@@ -28,8 +31,9 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #100e1d;
+  background-color: var(--clr-bg);
   font-family: var(--ff-body);
+  font-weight: var(--fw-reg);
   letter-spacing: 1px;
 
   text-rendering: optimizeSpeed;
@@ -46,8 +50,10 @@ ul {
   padding: 0;
 }
 
-button {
-  border: none;
+button,
+button:hover {
+  outline: none;
+  border: 1px solid hsl(0, 0%, 0%);
 }
 
 a,
