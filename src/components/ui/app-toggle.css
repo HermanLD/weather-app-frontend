@@ -1,8 +1,9 @@
 .app-toggle {
   display: flex;
+  justify-content: flex-end;
   padding-right: 1.3rem;
   padding-left: 1.3rem;
-  justify-content: flex-end;
+  margin-bottom: 4.6rem;
 }
 
 .app-toggle-celcius,

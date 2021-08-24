@@ -74,7 +74,8 @@
 
 @media (min-width: 1020px) {
   .forecast-main {
-    max-width: 45.9rem;
+    flex-grow: 1;
+    /* max-width: 45.9rem; */
     height: 100vh;
   }
 }

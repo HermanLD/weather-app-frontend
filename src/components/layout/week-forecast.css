@@ -6,9 +6,17 @@
   padding-top: var(--space-x);
   padding-bottom: var(--space-x);
 
-  flex-grow: 1;
+  flex-grow: 3;
 }
 
 .weekly-forecast-content {
+  width: 78%;
+  max-width: 85rem;
   margin: 0 auto;
+}
+
+@media (min-width: 1020px) {
+  .weekly-forecast {
+    --space-x: 4.2rem;
+  }
 }

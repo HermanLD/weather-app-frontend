@@ -2,9 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 78%;
-  /* max-width: ; */
-  margin: 0 auto;
+  /*! width: 78%; */
+  /*! max-width: ; */
+  /*! margin: 0 auto; */
   text-align: center;
 }
 
