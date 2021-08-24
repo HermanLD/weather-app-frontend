@@ -1,8 +1,6 @@
 .app-toggle {
   display: flex;
   justify-content: flex-end;
-  padding-right: 1.3rem;
-  padding-left: 1.3rem;
   margin-bottom: 4.6rem;
 }
 
@@ -31,10 +29,17 @@
 
 .app-toggle-celcius > .unit-label,
 .app-toggle-fahrenheit > .unit-label {
+  font-weight: var(--fw-bold);
 }
 
 .app-toggle-celcius[data-isChecked="true"],
 .app-toggle-fahrenheit[data-isChecked="true"] {
   background-color: #e7e7eb;
   color: #110e3c;
+}
+
+@media (min-width: 1020px) {
+  .app-toggle {
+    padding-right: 3.2rem;
+  }
 }
