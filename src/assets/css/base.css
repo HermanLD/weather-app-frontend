@@ -8,6 +8,8 @@
 
   --clr-bg: #100e1d;
   --clr-cmp-bg: #1e213a;
+
+  --clr-secondary-text: hsl(243, 10%, 66%);
 }
 
 *,

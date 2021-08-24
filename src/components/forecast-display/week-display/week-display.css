@@ -1,0 +1,39 @@
+.week-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 78%;
+  /* max-width: ; */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.week-display-card {
+  --space-y: 1.8rem;
+  width: 12rem;
+  /* margin: 1.6rem 1.3rem; */
+  margin: 1.6rem 0;
+  padding-top: var(--space-y);
+  padding-bottom: var(--space-y);
+  background-color: var(--clr-cmp-bg);
+}
+
+.week-display-temp,
+.week-display-heading {
+  font-size: 1.6rem;
+}
+
+.week-display-heading {
+  font-weight: var(--fw-reg);
+  margin-bottom: 1rem;
+}
+
+.week-display-temp > span:last-child {
+  margin-left: 1.6rem;
+  color: var(--clr-secondary-text);
+}
+
+.week-display-icon {
+  width: 6.6rem;
+  margin-bottom: 3.2rem;
+}

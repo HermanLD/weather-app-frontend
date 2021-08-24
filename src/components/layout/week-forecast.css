@@ -1,3 +1,14 @@
+.weekly-forecast {
+  --space-x: 2.4rem;
+  --space-y: 2.6rem;
+  padding-top: var(--space-y);
+  padding-bottom: var(--space-y);
+  padding-top: var(--space-x);
+  padding-bottom: var(--space-x);
+
+  flex-grow: 1;
+}
+
 .weekly-forecast-content {
   margin: 0 auto;
 }

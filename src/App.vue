@@ -62,11 +62,10 @@ export default {
   color: hsl(240, 9%, 91%);
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1020px) {
   .app-wrapper {
     flex-direction: row;
-    align-content: stretch;
-    flex-grow: 1;
+    /* align-content: stretch; */
   }
 }
 </style>

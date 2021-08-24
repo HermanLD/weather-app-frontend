@@ -3,6 +3,7 @@
     <div class="weekly-forecast-content">
       <!-- UNIT TOGGLE -->
       <unit-toggle />
+
       <div class="weekly-forecast-days">
         <!-- WEEK FORECAST DISPLAY -->
         <week-display />
@@ -29,6 +30,7 @@
 import WeekDisplay from "../forecast-display/week-display/WeekDisplay.vue";
 import HighlightDisplay from "../forecast-display/highlight-display/HighlightDisplay.vue";
 import UnitToggle from "../ui/AppToggle.vue";
+import "./week-forecast.css";
 
 export default {
   components: {

@@ -1,7 +1,10 @@
 .forecast-main {
+  padding-bottom: 2.1rem;
   background-color: var(--clr-cmp-bg);
   color: hsl(243, 10%, 66%);
   text-align: center;
+
+  overflow: hidden;
 }
 
 .forecast-main-display {
@@ -18,7 +21,7 @@
   /*? Shorthand for top, right, bottom, left  */
   inset: 0;
 
-  background: url("../../assets/images/Cloud-background.png");
+  background-image: url("../../assets/images/Cloud-background.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -72,5 +75,6 @@
 @media (min-width: 1020px) {
   .forecast-main {
     max-width: 45.9rem;
+    height: 100vh;
   }
 }
