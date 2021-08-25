@@ -1,0 +1,24 @@
+.highlight-display {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(32.8rem, 1fr));
+  gap: 3.2rem;
+}
+
+.highlight-display-item {
+  padding: 2.2rem 0 2.4rem 0;
+  background-color: var(--clr-cmp-bg);
+  text-align: center;
+}
+
+.highlight-display-item > .header {
+  font-size: 1.6rem;
+}
+
+.highlight-display-item .content {
+  font-size: 3.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.highlight-display-item .content-highlight {
+  font-size: 6.4rem;
+}

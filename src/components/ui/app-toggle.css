@@ -17,7 +17,7 @@
   background-color: #585676;
   color: #e7e7eb;
   font-size: 1.8rem;
-  font-weight: var(--fw-7);
+  font-weight: var(--fw-bold);
   text-align: center;
 
   cursor: pointer;
@@ -36,10 +36,4 @@
 .app-toggle-fahrenheit[data-isChecked="true"] {
   background-color: #e7e7eb;
   color: #110e3c;
-}
-
-@media (min-width: 1020px) {
-  .app-toggle {
-    padding-right: 3.2rem;
-  }
 }

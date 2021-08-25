@@ -1,17 +1,14 @@
 .week-display {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  margin-right: -2.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  column-gap: 2.6rem;
 }
 
 .week-display-card {
   --space-y: 1.8rem;
-  width: 12rem;
-  margin: 0 2.6rem 1.6rem 0;
-  padding-top: var(--space-y);
-  padding-bottom: var(--space-y);
+  padding: var(--space-y) 0;
   background-color: var(--clr-cmp-bg);
+  text-align: center;
 }
 
 .week-display-temp,

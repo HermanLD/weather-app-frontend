@@ -10,7 +10,7 @@
       </div>
 
       <div class="weekly-forecast-today">
-        <h1>Today's Highlights</h1>
+        <h1 class="header">Today's Highlights</h1>
         <!-- HIGHLIGHTS DISPLAY -->
         <highlight-display />
       </div>
