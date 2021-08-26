@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Weather-app (w/ backend API)</h1>
+<h1 align="center">Fullstack Weather-app</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -44,7 +44,7 @@
 - Learning to make a fullstack app w/ Backend For Frontend methodologies
 - Differences in fetching from the client vs. a server
 - Improving layout w/ CSS grid and variables
-- For more info on the [Weather-app backend](https://github.com/HermanLD/weather-app-backend-api).
+- Go to the backend repo for more info on the [Weather-app backend](https://github.com/HermanLD/weather-app-backend-api).
 
 ### Built With
 
@@ -77,7 +77,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/HermanLD/weather-app-frontend
 
 # Install dependencies
 $ npm install
@@ -101,7 +101,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
 
-- [Vuex - Vue.js State Management](https://content.nuxtjs.org/)
+- [Vuex - Vue.js State Management](https://vuex.vuejs.org/)
 - [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 
 ## Contact
