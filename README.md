@@ -41,10 +41,10 @@
 
 <!-- Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering: -->
 
-- Learning to make a fullstack app w/ Backend For Frontend methodologies
+- Learning to make a fullstack app following the [Backend For Frontend (BFF) pattern](https://blog.bitsrc.io/bff-pattern-backend-for-frontend-an-introduction-e4fa965128bf)
 - Differences in fetching from the client vs. a server
 - Improving layout w/ CSS grid and variables
-- Go to the backend repo for more info on the [Weather-app backend](https://github.com/HermanLD/weather-app-backend-api).
+- Go to the backend repo for more info on the [Weather-app's backend REST API](https://github.com/HermanLD/weather-app-backend-api).
 
 ### Built With
 
@@ -101,6 +101,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
 
+- [The BFF Pattern (Backend for Frontend): An Introduction](https://blog.bitsrc.io/bff-pattern-backend-for-frontend-an-introduction-e4fa965128bf)
 - [Vuex - Vue.js State Management](https://vuex.vuejs.org/)
 - [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 
