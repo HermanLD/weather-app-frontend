@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">weather-app</h1>
+<h1 align="center">Weather-app (w/ backend API)</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -12,8 +12,8 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
-      Solution
+    <a href="https://github.com/HermanLD/weather-app-backend-api">
+      Backend Repo
     </a>
     <span> | </span>
     <a href="https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv">
@@ -41,9 +41,9 @@
 
 <!-- Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering: -->
 
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+- Learning to make a fullstack app w/ Backend For Frontend methodologies
+- Differences in fetching from the client vs. a server
+- Improving layout w/ CSS grid and variables
 
 ### Built With
 
@@ -87,9 +87,6 @@ $ npm run serve
 # Compiles and minifies for production
 $ npm run build
 
-# Run your unit tests
-$ npm run test:unit
-
 # Lints and fixes files
 $ npm run lint
 
@@ -104,11 +101,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
 
 - [Vuex - Vue.js State Management](https://content.nuxtjs.org/)
-- [Jest - JavaScript testing framework](https://jestjs.io/)
 - [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 
 ## Contact
 
 - Website [My Portfolio](https://portfolio-olive-alpha.vercel.app/)
 - GitHub [@HermanLD](https://github.com/HermanLD/)
+- Linkedin [herman-dardon](https://www.linkedin.com/in/herman-dardon/)
 - Twitter [@DardonHerman](https://twitter.com/DardonHerman/)
