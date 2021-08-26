@@ -87,6 +87,9 @@ export default new Vuex.Store({
       if (state.selectedUnit === "f") return "°F";
       return "°C";
     },
+    getSelectedUnit(state) {
+      return state.selectedUnit;
+    },
     getPermission(state) {
       return state.allowUserLocation;
     },

@@ -23,7 +23,6 @@
 </template>
 
 <script>
-import "./week-display.css";
 import formatDate from "../../../utils/filterDate";
 import roundTemp from "../../../utils/filterRoundNum";
 
@@ -47,3 +46,39 @@ export default {
   },
 };
 </script>
+
+<style>
+.week-display {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  column-gap: 2.6rem;
+  row-gap: 3.2rem;
+}
+
+.week-display-card {
+  --space-y: 1.8rem;
+  padding: var(--space-y) 0;
+  background-color: var(--clr-cmp-bg);
+  text-align: center;
+}
+
+.week-display-temp,
+.week-display-heading {
+  font-size: 1.6rem;
+}
+
+.week-display-heading {
+  font-weight: var(--fw-reg);
+  margin-bottom: 1rem;
+}
+
+.week-display-temp > span:last-child {
+  margin-left: 1.6rem;
+  color: var(--clr-secondary-text);
+}
+
+.week-display-icon {
+  width: 6.6rem;
+  margin-bottom: 3.2rem;
+}
+</style>
