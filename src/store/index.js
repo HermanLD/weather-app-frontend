@@ -42,35 +42,25 @@ export default new Vuex.Store({
       commit("TOGGLE_USER_PERMISSON");
     },
     async fetchForecast({ commit, state }, payload) {
-      // const URL = process.env.VUE_APP_BACKEND_URL;
+      const URL = process.env.VUE_APP_BACKEND_URL;
 
-      // try {
-      //   const res = await fetch(
-      //     `${URL}?lat=${payload.lat}&lon=${
-      //       payload.lon
-      //     }&address=${encodeURIComponent(payload.address)}&unit=${
-      //       state.selectedUnit
-      //     }`
-      //   );
+      try {
+        const res = await fetch(
+          `${URL}?lat=${payload.lat}&lon=${
+            payload.lon
+          }&address=${encodeURIComponent(payload.address)}&unit=${
+            state.selectedUnit
+          }`
+        );
 
-      //   if (res.status !== 200) throw new Error("Cannot fetch data!");
+        if (res.status !== 200) throw new Error("Cannot fetch data!");
 
-      //   const forecast = await res.json();
+        const forecast = await res.json();
 
-      //   commit("LOAD_FORECAST", forecast);
-      // } catch (error) {
-      //   console.log(error);
-      // }
-
-      //! TESTING TESTING
-      console.log("TESTING TESTING");
-      console.log("Current city: ", state.cityName);
-      console.log("Selected Unit: ", state.selectedUnit);
-      console.log(payload);
-      const forecast = testData;
-
-      commit("LOAD_FORECAST", forecast);
-      //! TESTING TESTING
+        commit("LOAD_FORECAST", forecast);
+      } catch (error) {
+        console.log(error);
+      }
     },
   },
   getters: {
