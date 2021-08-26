@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://weather-app-frontend-sigma.vercel.app/">
       Demo
     </a>
     <span> | </span>
@@ -37,13 +37,14 @@
 
 ## Overview
 
-![screenshot](https://media.nationalgeographic.org/assets/photos/000/263/26383.jpg)
+![screenshot](https://res.cloudinary.com/nimbus8/image/upload/v1630007139/portfolio/Screenshot_2021-08-26_at_12-44-43_weather-app-frontend_sz0ej9.png)
 
 <!-- Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering: -->
 
 - Learning to make a fullstack app w/ Backend For Frontend methodologies
 - Differences in fetching from the client vs. a server
 - Improving layout w/ CSS grid and variables
+- For more info on the [Weather-app backend](https://github.com/HermanLD/weather-app-backend-api).
 
 ### Built With
 
@@ -67,8 +68,8 @@ This application/site was created as a submission to a [DevChallenges](https://d
 - See humidity percentage
 - See a visibility indicator
 - See the air pressure number
-- (optional): I can request my current location weather
-- (optional): I can convert temperature in Celcius to Fahrenheit and vice versa
+- User can request current location weather
+- User can convert temperature in Celcius to Fahrenheit and vice versa
 
 ## How To Use
 
